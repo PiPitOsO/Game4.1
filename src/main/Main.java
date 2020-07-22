@@ -8,36 +8,60 @@ public class Main {
         StringBuilder sb = new StringBuilder();
 
         File main = new File("src//main");
-        if (main.mkdir())
+        if (main.mkdir()) {
             sb.append("Каталог main создан в scr\n");
+        } else {
+            sb.append("ФКаталог main не создан\n");
+        }
 
         File test = new File("scr//test");
-        if (test.mkdir())
+        if (test.mkdir()) {
             sb.append("Каталог test создан в scr\n");
+    } else {
+            sb.append("Каталог test не создан\n");
+    }
 
         File res = new File("res");
-        if (res.mkdir())
+        if (res.mkdir()) {
             sb.append("Каталог res создан\n");
+        } else {
+            sb.append("Каталог res не создан\n");
+        }
 
         File drawables = new File("res//drawables");
-        if (drawables.mkdir())
+        if (drawables.mkdir()) {
             sb.append("Каталог drawables создан в res\n");
+        } else {
+            sb.append("Каталог drawables в res не создан\n");
+        }
 
         File vectors = new File("res//vectors");
-        if (vectors.mkdir())
+        if (vectors.mkdir()) {
             sb.append("Каталог vectors создан в res\n");
+        } else {
+            sb.append("Каталог vectors в res не создан\n");
+        }
 
         File icons = new File("res//icons");
-        if (icons.mkdir())
+        if (icons.mkdir()) {
             sb.append("Каталог icons создан в res\n");
+        } else {
+            sb.append("Каталог icons в res не создан\n");
+        }
 
         File savegames = new File("savegames");
-        if (savegames.mkdir())
+        if (savegames.mkdir()) {
             sb.append("Каталог savegames создан\n");
+        } else {
+            sb.append("Каталог savegames не создан\n");
+        }
 
         File temp = new File("temp");
-        if (temp.mkdir())
+        if (temp.mkdir()) {
             sb.append("Каталог temp создан\n");
+        } else {
+            sb.append("Каталог temp не создан\n");
+        }
 
         File utils = new File("src//main//Utils.java");
         try {
