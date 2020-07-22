@@ -17,9 +17,9 @@ public class Main {
         File test = new File("scr//test");
         if (test.mkdir()) {
             log.append("Каталог test создан в scr\n");
-    } else {
+        } else {
             log.append("Каталог test не создан\n");
-    }
+        }
 
         File res = new File("res");
         if (res.mkdir()) {
